@@ -1,0 +1,113 @@
+:root {
+    --purple-primary: #6A4C9C; /* Deep Purple */
+    --purple-secondary: #9B75D1; /* Light Purple */
+    --purple-accent: #B07CF2; /* Soft Purple */
+    --purple-light: #E0C1F4; /* Very Light Purple */
+    --purple-dark: #3F2A7B; /* Dark Purple for headers and footers */
+    --white: #ffffff;
+    --text-color: #333333; /* Dark text for readability */
+}
+
+/* Body Background */
+body {
+    background-color: var(--purple-light);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+h1, h2, h3, h4 {
+    color: var(--purple-dark);
+}
+
+/* Table headers */
+th {
+    background-color: var(--purple-primary);
+    color: var(--white);
+    padding: 10px;
+}
+
+/* Table rows */
+td {
+    background-color: var(--white);
+    color: var(--purple-dark);
+    padding: 8px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--purple-primary);
+    border: none;
+    color: var(--white);
+}
+
+    .btn-primary:hover {
+        background-color: var(--purple-accent);
+        color: var(--white);
+    }
+
+a {
+    color: var(--purple-dark);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--purple-primary);
+    }
+
+/* Form inputs */
+input, select, textarea {
+    border: 1px solid var(--purple-primary);
+    background-color: var(--white);
+    color: var(--purple-dark);
+}
+
+    input[type="submit"], .btn {
+        background-color: var(--purple-primary);
+        color: var(--white);
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+
+        input[type="submit"]:hover, .btn:hover {
+            background-color: var(--purple-accent);
+            color: var(--white);
+        }
+
+/* Footer */
+footer {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+    footer a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: var(--purple-accent);
+        }
+
+/* Additional styling for form fields and labels */
+.form-group label {
+    color: var(--purple-dark);
+}
+
+.form-control {
+    border-color: var(--purple-primary);
+    color: var(--purple-dark);
+}
+
+/* Alerts */
+.alert-info {
+    background-color: var(--purple-light);
+    color: var(--purple-dark);
+}
+
+.alert-danger {
+    background-color: #F8D7DA;
+    color: #721C24;
+}
